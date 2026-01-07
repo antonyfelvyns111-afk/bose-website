@@ -1,0 +1,172 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background: white;
+}
+
+.logo {
+  height: 28px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.search {
+  padding: 6px 10px;
+}
+/* HERO WRAPPER — CREATES SPACE AROUND IMAGE */
+.hero-wrapper {
+  padding: 40px;          /* 👈 space on all sides */
+  background: white;
+}
+
+/* HERO – FINAL (BOSE STYLE) */
+.hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 80px); /* below navbar */
+  background-image: url("https://cdn.shopify.com/s/files/1/0904/2873/5761/files/QCUEBIILE26-DesertGold_Lifestyle_01_5828_4371.jpg?v=1767206395");
+  background-size: cover;        /* FULL WIDTH LIKE BOSE */
+  background-position: center;  /* CORRECT FOCUS */
+  background-repeat: no-repeat;
+}
+
+/* TEXT POSITION */
+.hero-content {
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+  color: white;
+  max-width: 520px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  margin-bottom: 12px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+.hero-content button {
+  padding: 12px 24px;
+  background: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+/* RECOMMENDED */
+.recommended {
+  padding: 80px 60px;
+  background: #fafafa;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.product-card {
+  background: white;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.add-cart {
+  display: none;
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  background: white;
+}
+
+.product-card:hover .add-cart {
+  display: block;
+}
+/* PROMO WRAPPER — CREATES SPACE AROUND IMAGE */
+.promo-wrapper {
+  padding: 40px;          /* 👈 space on all corners */
+  background: white;
+}
+
+/* PROMO IMAGE */
+.promo {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* TEXT INSIDE PROMO */
+.promo-content {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  color: white;
+  max-width: 520px;
+}
+
+.promo-content h1 {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.promo-content p {
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+.promo-content button {
+  padding: 12px 24px;
+  background: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* WHY BUY */
+.whybuy {
+  padding: 80px 60px;
+  background: #f5f5f5;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
