@@ -18,9 +18,13 @@ body {
   padding: 0 40px;
   background: white;
 }
+.nexxbaseImage {
+  height: 50px;
+}
 
 .logo {
-  height: 28px;
+  height: 100px;
+
 }
 
 .nav-links {

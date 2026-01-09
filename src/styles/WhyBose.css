@@ -1,0 +1,77 @@
+.why-bose {
+  padding: 100px 64px;
+  background: #fff;
+}
+
+.why-bose h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 80px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+}
+
+.why-card {
+  max-width: 280px;
+}
+
+.icon-circle {
+  width: 96px;
+  height: 96px;
+  background: #f6f6f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.material-icons {
+  font-size: 36px;
+  color: #000;
+}
+
+.why-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.why-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.why-card a {
+  font-size: 16px;
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.why-card a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-bose h2 {
+    font-size: 36px;
+  }
+}

@@ -1,4 +1,8 @@
+import { ShoppingCart,UserCircle2 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import Nexxbase from "../Assets/Nexxbase.png"
 const Navbar = () => {
+  const navigate=useNavigate()
   return (
     <nav className="navbar">
       <img
@@ -14,6 +18,17 @@ const Navbar = () => {
       </ul>
 
       <input className="search" placeholder="Search" />
+      <div onClick={()=>{
+        navigate("/login")
+      }}>
+        <UserCircle2 />
+      </div>
+      <div onClick={()=>{
+        navigate('/cart')
+      }}>
+        <ShoppingCart />
+      </div>
+      <img className="nexxbaseImage" src={Nexxbase} alt="nexxbase image" />
     </nav>
   );
 };
