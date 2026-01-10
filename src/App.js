@@ -1,22 +1,18 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import Cartcontxt from "./pages/Cartcontxt";
 import LoginModal from "./pages/LoginModal";
 
 function App() {
-  const location = useLocation();
-
   return (
-    <>
-      {/* Always render Home */}
-      <Routes location={location}>
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
-
-      {/* Login modal on top */}
-      {location.pathname === "/login" && <LoginModal />}
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/cartcontext" element={<Cartcontxt />} />
+      <Route path="/login" element={<LoginModal />} />
+    </Routes>
   );
 }
 
