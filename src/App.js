@@ -5,6 +5,13 @@ import Cart from "./pages/Cart";
 import Cartcontxt from "./pages/Cartcontxt";
 import LoginModal from "./pages/LoginModal";
 
+/*
+  IMPORTANT:
+  Explore / Contact routes are NOT added yet
+  because teammate hasn’t pushed them.
+  This avoids blank-page crashes.
+*/
+
 function App() {
   return (
     <Routes>
@@ -17,3 +24,4 @@ function App() {
 }
 
 export default App;
+
