@@ -1,0 +1,58 @@
+.navbar {
+  height: 90px;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+/* BOSE LOGO – RESTORED SIZE */
+.logo {
+  height: 80px;       /* ⬅️ THIS FIXES THE SMALL LOGO */
+  width: auto;
+  cursor: pointer;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+  margin-left: 60px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  text-decoration: underline;
+}
+
+/* SEARCH BAR */
+.search {
+  margin-left: auto;
+  padding: 10px 18px;
+  border-radius: 24px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  width: 220px;
+}
+
+/* ICONS */
+.icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* NEXXBASE LOGO */
+.nexxbaseImage {
+  height: 32px;
+  cursor: pointer;
+}

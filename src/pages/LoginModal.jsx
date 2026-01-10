@@ -1,20 +1,25 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/LoginModal.css";
 
 export default function LoginModal() {
   const [activeTab, setActiveTab] = useState("email");
+  const navigate = useNavigate();
 
   return (
     <div className="modal-overlay">
       <div className="modal-box">
 
         {/* Close */}
-        <button className="close-btn">×</button>
+        <button
+          className="close-btn"
+          onClick={() => navigate("/")}
+        >
+          ×
+        </button>
 
-        {/* Title */}
         <h2 className="title">Log In</h2>
 
-        {/* Tabs */}
         <div className="tabs">
           <button
             className={`tab ${activeTab === "email" ? "active" : ""}`}
@@ -31,17 +36,14 @@ export default function LoginModal() {
           </button>
         </div>
 
-        {/* Input */}
         <input
           className="input"
           type={activeTab === "email" ? "email" : "tel"}
           placeholder={activeTab === "email" ? "Email ID" : "Phone Number"}
         />
 
-        {/* OTP */}
         <button className="otp-btn">REQUEST OTP</button>
 
-        {/* Login */}
         <button className="login-btn" disabled>
           LOG IN
         </button>
