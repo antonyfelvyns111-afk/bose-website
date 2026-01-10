@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Cartcontxt from "./pages/Cartcontxt";
 import LoginModal from "./pages/LoginModal";
+import ContactUs from "./pages/ContactUs";
 
 /*
   IMPORTANT:
@@ -19,6 +20,8 @@ function App() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/cartcontext" element={<Cartcontxt />} />
       <Route path="/login" element={<LoginModal />} />
+      <Route path="/contact" element={<ContactUs />} />
+
     </Routes>
   );
 }
