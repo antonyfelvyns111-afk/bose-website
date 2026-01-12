@@ -1,0 +1,215 @@
+.product-page {
+  padding: 60px 80px;
+}
+
+.product-main {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* LEFT SCROLL COLUMN */
+.left-column {
+  flex: 1.6;
+}
+
+/* RIGHT STICKY COLUMN */
+.product-info {
+  flex: 1;
+  margin-left: 140px;
+}
+
+.sticky {
+  position: sticky;
+  top: 100px; /* Bose-like offset */
+}
+
+/* IMAGE */
+.image-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.main-image {
+  width: 600px;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 45%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #ccc;
+  font-size: 26px;
+}
+
+.nav-btn.left { left: -60px; }
+.nav-btn.right { right: -60px; }
+
+/* THUMBNAILS */
+.thumbnails {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 30px 0 40px;
+}
+
+.thumb {
+  width: 64px;
+  opacity: 0.4;
+}
+
+.thumb.active {
+  opacity: 1;
+  outline: 1px solid #bbb;
+  padding: 4px;
+}
+
+/* FEATURES */
+.features-section {
+  background: #fafafa;
+  padding: 50px 40px;
+  margin-bottom: 80px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
+  text-align: center;
+}
+
+.view-toggle {
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/* VIDEO */
+.product-video {
+  margin: 120px 0;
+}
+
+.product-video video {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: auto;
+}
+
+/* RIGHT SIDE */
+.product-info h1 {
+  font-size: 40px;
+}
+
+.product-desc {
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.read-more {
+  color: #0066ff;
+  cursor: pointer;
+}
+
+.color-section {
+  margin: 30px 0;
+}
+
+.color-options {
+  display: flex;
+  gap: 12px;
+}
+
+.color-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.color-dot.white { background: #f3efec; border: 1px solid #ccc; }
+.color-dot.black { background: #111; }
+.color-dot.blue { background: #1e2f45; }
+.color-dot.grey { background: #d3d3d3; }
+.color-dot.pink { background: #b24a6a; }
+
+.price {
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+.add-to-cart {
+  width: 360px;
+  padding: 18px;
+  background: black;
+  color: white;
+  border: none;
+}
+
+.benefits-box {
+  margin-top: 40px;
+}
+
+/* FEATURE ITEMS (ICON + TEXT) */
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.feature-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+/* Optional: Bose-like subtle hover */
+.feature-item:hover .feature-icon {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.feature-item p {
+  font-size: 14px;
+  max-width: 160px;
+  line-height: 1.4;
+}
+
+/* ================= PRODUCT DETAILS ACCORDION ================= */
+
+.product-accordion {
+  padding: 140px 80px;
+  background: #fff;
+}
+
+.product-accordion h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+/* Accordion rows */
+.accordion-item {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 0;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Plus icon on right */
+.accordion-icon {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1;
+}
+

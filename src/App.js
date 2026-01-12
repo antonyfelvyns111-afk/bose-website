@@ -5,6 +5,10 @@ import Cart from "./pages/Cart";
 import Cartcontxt from "./pages/Cartcontxt";
 import LoginModal from "./pages/LoginModal";
 import ContactUs from "./pages/ContactUs";
+import Headphones from "./pages/Headphones";
+import ProductDetails from "./pages/ProductDetails";
+import HomeExplore from "./pages/Explore";
+
 
 /*
   IMPORTANT:
@@ -21,6 +25,10 @@ function App() {
       <Route path="/cartcontext" element={<Cartcontxt />} />
       <Route path="/login" element={<LoginModal />} />
       <Route path="/contact" element={<ContactUs />} />
+      <Route path="/shop/headphones" element={<Headphones />} />
+      <Route path="/product-details" element={<ProductDetails />} />
+      <Route path="/explore/home" element={<HomeExplore />} />
+
 
     </Routes>
   );
