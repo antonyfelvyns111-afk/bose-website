@@ -1,0 +1,87 @@
+.home-page {
+  padding: 40px 60px;
+}
+
+.page-title {
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.product-card {
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.color {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.swatches {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.swatch.black {
+  background: #000;
+}
+
+.swatch.active {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+.title {
+  margin-top: 14px;
+  font-size: 16px;
+}
+
+.price {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* BOSE hover behaviour */
+.add-to-cart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px 0;
+  background: white;
+  border: 1px solid black;
+  font-weight: 600;
+
+  color: black;        /* ✅ THIS IS THE FIX */
+  font-size: 14px;     /* keep Bose size */
+  text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+.product-card:hover .add-to-cart {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

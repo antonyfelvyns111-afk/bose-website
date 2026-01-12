@@ -5,6 +5,8 @@ import Hero from "../components/Hero";
 import Recommended from "../components/Recommended";
 import Promo from "../components/Promo";
 import WhyBuy from "../components/WhyBuy";
+import MegaMenu from "../shop-components/MegaMenu"; 
+
 
 const Home = () => {
   return (
